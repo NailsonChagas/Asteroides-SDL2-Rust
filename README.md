@@ -21,4 +21,7 @@ Feito seguindo o tutorial nessa playlist -> https://www.youtube.com/playlist?lis
 - **specs-derive:** Implementa os macros #[derive(Component)], #[derive(Saveload)] e o atributo #[component] para **specs**.
 
 ## Preparando o ambiente de dev
-```sudo apt-get install libsdl2-dev```
+- SDL: ```sudo apt-get install libsdl2-dev```  
+- SDL_Image: ```sudo apt install libjpeg-dev libwebp-dev libtiff5-dev libsdl2-image-dev libsdl2-image-2.0-0 -y;```  
+- SDL_Sound: ```sudo apt install libmikmod-dev libfishsound1-dev libsmpeg-dev liboggz2-dev libflac-dev libfluidsynth-dev libsdl2-mixer-dev libsdl2-mixer-2.0-0 -y;```  
+- SDL_Text: ```sudo apt install libfreetype6-dev libsdl2-ttf-dev libsdl2-ttf-2.0-0 -y;```  

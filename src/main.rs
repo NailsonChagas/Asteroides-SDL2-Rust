@@ -1,4 +1,4 @@
-#![allow(dead_code, unused_imports, unused_variables, unused_attributes)]
+#![allow(dead_code, unused_imports, unused_variables, unused_attributes, unused_mut)]
 
 use sdl2::event::Event;
 use sdl2::keyboard::Keycode;
@@ -24,6 +24,15 @@ fn main() -> Result<(), String> {
         .position_centered()
         .build()
         .expect("Não foi possivel criar a janela");
+    let mut canvas = window.into_canvas()
+        .build()
+        .expect("Falha ao iniciar canvas");
+    
+    let texture_creator = canvas.texture_creator();
+
+    // Preparar fontes
+    let ttf_ctx = sdl2::ttf::init()
+        .map_err(|e| e.to_string())?;
 
     // lidando com evento e main loop
     let mut event_pump = sdl_ctx.event_pump()?;
@@ -32,7 +41,7 @@ fn main() -> Result<(), String> {
         for event in event_pump.poll_iter() {
             match event {
                 Event::Quit { .. } => {
-                    //evendo ce cliar para fechar a janela
+                    //evendo de clicar para fechar a janela
                     break 'running;
                 }
                 Event::KeyDown {

@@ -9,6 +9,10 @@ edition = "2021"
 kira = "0.7.1"
 once_cell = "1.17.0"
 rand = "0.8.5"
-sdl2 = "0.35.2"
 specs = "0.18.0"
 specs-derive = "0.4.1"
+
+
+[dependencies.sdl2]
+sdl2 = "0.35.2"
+features = ["image","ttf"]
