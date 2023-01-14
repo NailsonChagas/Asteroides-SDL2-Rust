@@ -1,5 +1,5 @@
 # Asteroids Clone
-Feito seguindo o tutorial nessa playlist.  
+Feito seguindo o tutorial nessa playlist -> https://www.youtube.com/playlist?list=PLFOS-Gn3aXROnSfl26esPExssd-rQw6jD.  
 **Obs:** Feito com o objetivo de aprender alguns conceitos de SDL2.  
 
 ## Dependências usadas
